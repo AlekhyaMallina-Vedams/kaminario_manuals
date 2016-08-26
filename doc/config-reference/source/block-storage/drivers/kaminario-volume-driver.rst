@@ -103,3 +103,5 @@ Driver options
 The following table contains the configuration options that are specific
 to the Kaminario K2 FC and iSCSI Cinder Drivers
 
+.. include:: ../../tables/cinder-kaminario.rst
+
