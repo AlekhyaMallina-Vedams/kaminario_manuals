@@ -25,6 +25,6 @@
    * - ``dell_sc_ssn`` = ``64702``
      - (Integer) Storage Center System Serial Number
    * - ``dell_sc_verify_cert`` = ``False``
-     - (Boolean) Enable HTTPS SC certificate verification.
+     - (Boolean) Enable HTTPS SC certificate verification
    * - ``dell_sc_volume_folder`` = ``openstack``
      - (String) Name of the volume folder to use on the Storage Center

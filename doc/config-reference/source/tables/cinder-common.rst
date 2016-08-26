@@ -64,8 +64,6 @@
      - (List) The list of secondary IP addresses of the iSCSI daemon
    * - ``max_over_subscription_ratio`` = ``20.0``
      - (Floating point) Float representation of the over subscription ratio when thin provisioning is involved. Default ratio is 20.0, meaning provisioned capacity can be 20 times of the total physical capacity. If the ratio is 10.5, it means provisioned capacity can be 10.5 times of the total physical capacity. A ratio of 1.0 means provisioned capacity cannot exceed the total physical capacity. The ratio has to be a minimum of 1.0.
-   * - ``memcached_servers`` = ``None``
-     - (List) Memcached servers or None for in process cache.
    * - ``monkey_patch`` = ``False``
      - (Boolean) Enable monkey patching
    * - ``monkey_patch_modules`` =

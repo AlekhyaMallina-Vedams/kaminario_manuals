@@ -1,3 +1,5 @@
+additional_retry_list Unknown
+admin_port Unknown
 allocated_capacity_weight_multiplier storage
 allow_availability_zone_fallback common
 allowed_direct_url_schemes images
@@ -26,6 +28,7 @@ backup_gcs_enable_progress_timer backups_gcs
 backup_gcs_num_retries backups_gcs
 backup_gcs_object_size backups_gcs
 backup_gcs_project_id backups_gcs
+backup_gcs_proxy_url Unknown
 backup_gcs_reader_chunk_size backups_gcs
 backup_gcs_retry_error_codes backups_gcs
 backup_gcs_storage_class backups_gcs
@@ -65,6 +68,7 @@ backup_tsm_compression backups_tsm
 backup_tsm_password backups_tsm
 backup_tsm_volume_prefix backups_tsm
 backup_use_same_host backups
+backup_use_temp_snapshot Unknown
 blockbridge_api_host blockbridge
 blockbridge_api_port blockbridge
 blockbridge_auth_password blockbridge
@@ -86,6 +90,7 @@ cb_create_volume cloudbyte
 cb_tsm_name cloudbyte
 cb_update_file_system cloudbyte
 cb_update_qos_group cloudbyte
+chap Unknown
 chap_password common
 chap_username common
 check_max_pool_luns_threshold emc
@@ -96,21 +101,40 @@ cinder_huawei_conf_file huawei
 cinder_internal_tenant_project_id common
 cinder_internal_tenant_user_id common
 clone_check_timeout disco
+clone_volume_timeout Unknown
 cloned_volume_same_az zones
+cluster Unknown
 coho_rpc_port coho
 compute_api_class common
+conn_pool_min_size Unknown
+conn_pool_ttl Unknown
+connection_type Unknown
 consistencygroup_api_class common
 control_exchange amqp
+coprhd_emulate_snapshot Unknown
+coprhd_hostname Unknown
+coprhd_password Unknown
+coprhd_port Unknown
+coprhd_project Unknown
+coprhd_scaleio_rest_gateway_host Unknown
+coprhd_scaleio_rest_gateway_port Unknown
+coprhd_scaleio_rest_server_password Unknown
+coprhd_scaleio_rest_server_username Unknown
+coprhd_tenant Unknown
+coprhd_username Unknown
+coprhd_varray Unknown
+datera_503_interval datera
+datera_503_timeout datera
+datera_acl_allow_all datera
 datera_api_port datera
 datera_api_version datera
-datera_num_replicas datera
-datera_503_timeout datera
-datera_503_interval datera
-datera_acl_allow_all datera
 datera_debug datera
+datera_debug_replica_count_override Unknown
+datera_num_replicas datera
 db_driver disable
 debug disable
 default_availability_zone common
+default_group_type Unknown
 default_log_levels disable
 default_timeout api
 default_volume_type common
@@ -120,6 +144,7 @@ dell_sc_ssn dellsc
 dell_sc_verify_cert dellsc
 dell_sc_volume_folder dellsc
 destroy_empty_storage_group emc
+device_id Unknown
 disco_client disco
 disco_client_port disco
 disco_wsdl_path disco
@@ -132,19 +157,27 @@ dothill_verify_certificate_path dothill
 dpl_pool prophetstor_dpl
 dpl_port prophetstor_dpl
 drbdmanage_devs_on_controller drbd
+drbdmanage_disk_options Unknown
+drbdmanage_net_options Unknown
 drbdmanage_redundancy drbd
 drbdmanage_resize_plugin drbd
 drbdmanage_resize_policy drbd
+drbdmanage_resource_options Unknown
 drbdmanage_resource_plugin drbd
 drbdmanage_resource_policy drbd
 drbdmanage_snapshot_plugin drbd
 drbdmanage_snapshot_policy drbd
+driver_client_cert Unknown
+driver_client_cert_key Unknown
 driver_data_namespace common
 driver_ssl_cert_path common
 driver_ssl_cert_verify common
 driver_use_ssl xio
+dsware_isthin Unknown
+dsware_manager Unknown
 enable_force_upload common
 enable_new_services common
+enable_unsupported_driver Unknown
 enable_v1_api api
 enable_v2_api api
 enable_v3_api api
@@ -169,6 +202,9 @@ flashsystem_iscsi_portid flashsystem
 flashsystem_multihostmap_enabled flashsystem
 flashsystem_multipath_enabled flashsystem
 force_delete_lun_in_storagegroup emc
+fss_debug Unknown
+fss_pool Unknown
+fusionstorageagent Unknown
 glance_api_insecure images
 glance_api_servers images
 glance_api_ssl_compression images
@@ -219,6 +255,26 @@ hitachi_target_ports hitachi-hbsd
 hitachi_thin_pool_id hitachi-hbsd
 hitachi_unit_name hitachi-hbsd
 hitachi_zoning_request hitachi-hbsd
+hnas_chap_enabled Unknown
+hnas_cluster_admin_ip0 Unknown
+hnas_mgmt_ip0 Unknown
+hnas_password Unknown
+hnas_ssc_cmd Unknown
+hnas_ssh_port Unknown
+hnas_ssh_private_key Unknown
+hnas_svc0_hdp Unknown
+hnas_svc0_iscsi_ip Unknown
+hnas_svc0_volume_type Unknown
+hnas_svc1_hdp Unknown
+hnas_svc1_iscsi_ip Unknown
+hnas_svc1_volume_type Unknown
+hnas_svc2_hdp Unknown
+hnas_svc2_iscsi_ip Unknown
+hnas_svc2_volume_type Unknown
+hnas_svc3_hdp Unknown
+hnas_svc3_iscsi_ip Unknown
+hnas_svc3_volume_type Unknown
+hnas_username Unknown
 host common
 hpe3par_api_url hpe3par
 hpe3par_cpg hpe3par
@@ -302,6 +358,7 @@ iser_helper storage
 iser_ip_address storage
 iser_port storage
 iser_target_prefix storage
+kaminario_nodedup_substring Unknown
 keystone_catalog_info backups_swift
 lenovo_api_protocol lenovo
 lenovo_backend_name lenovo
@@ -326,12 +383,17 @@ management_ips api
 max_age quota
 max_luns_per_storage_group emc
 max_over_subscription_ratio common
-memcached_servers common
+message_ttl Unknown
+metro_domain_name Unknown
+metro_san_address Unknown
+metro_san_password Unknown
+metro_san_user Unknown
+metro_storage_pools Unknown
 migration_create_volume_timeout_secs storage
 monkey_patch common
 monkey_patch_modules common
 my_ip common
-nas_ip nas storage_gpfs
+nas_host Unknown
 nas_login nas storage_gpfs
 nas_mount_options nas
 nas_password nas storage_gpfs
@@ -352,10 +414,12 @@ netapp_lun_space_reservation netapp_cdot_iscsi
 netapp_partner_backend_name netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
 netapp_password netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
 netapp_pool_name_search_pattern netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
+netapp_replication_aggregate_map Unknown
 netapp_sa_password netapp_eseries_iscsi
 netapp_server_hostname netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
 netapp_server_port netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
 netapp_size_multiplier netapp_7mode_iscsi netapp_cdot_iscsi
+netapp_snapmirror_quiesce_timeout Unknown
 netapp_storage_family netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
 netapp_storage_protocol netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs
 netapp_transport_type netapp_7mode_iscsi netapp_7mode_nfs netapp_cdot_iscsi netapp_cdot_nfs netapp_eseries_iscsi
@@ -373,6 +437,7 @@ nexenta_iscsi_service nexenta_edge
 nexenta_iscsi_target_portal_port nexenta nexenta5 nexenta_edge
 nexenta_lun_container nexenta_edge
 nexenta_mount_point_base nexenta nexenta5
+nexenta_nbd_symlinks_dir Unknown
 nexenta_nms_cache_volroot nexenta
 nexenta_ns5_blocksize nexenta5
 nexenta_password nexenta
@@ -409,6 +474,7 @@ nova_endpoint_template compute
 num_iser_scan_tries storage
 num_shell_tries common
 num_volume_device_scan_tries storage
+one_time_pass Unknown
 os_privileged_user_auth_url common
 os_privileged_user_name common
 os_privileged_user_password common
@@ -422,9 +488,14 @@ osapi_volume_extension api
 osapi_volume_listen api
 osapi_volume_listen_port api
 osapi_volume_workers api
+password Unknown
 per_volume_size_limit api
 periodic_fuzzy_delay common
 periodic_interval common
+pool_id_filter Unknown
+pool_name Unknown
+pool_type Unknown
+proxy Unknown
 public_endpoint api
 publish_errors disable
 pure_api_token pure
@@ -475,13 +546,13 @@ rpc_poll_timeout rpc
 rpc_response_timeout rpc
 rpc_zmq_bind_address zeromq
 rpc_zmq_bind_port_retries zeromq
-rpc_zmq_concurrency zeromq
 rpc_zmq_contexts zeromq
 rpc_zmq_host zeromq
 rpc_zmq_ipc_dir zeromq
 rpc_zmq_matchmaker zeromq
 rpc_zmq_max_port zeromq
 rpc_zmq_min_port zeromq
+rpc_zmq_serialization Unknown
 rpc_zmq_topic_backlog zeromq
 san_clustername san xiv
 san_ip san prophetstor_dpl xiv
@@ -489,9 +560,10 @@ san_is_local san
 san_login san prophetstor_dpl xiv
 san_password san prophetstor_dpl xiv
 san_private_key san
-san_secondary_ip san
 san_ssh_port san
 san_thin_provision san prophetstor_dpl
+scaleio_server_certificate_path Unknown
+scaleio_verify_server_certificate Unknown
 scality_sofs_config scality
 scality_sofs_mount_point scality
 scality_sofs_volume_dir scality
@@ -503,8 +575,13 @@ scheduler_json_config_location scheduler
 scheduler_manager scheduler
 scheduler_max_attempts scheduler
 scheduler_topic scheduler
+scheduler_weight_handler Unknown
 scst_target_driver scst
 scst_target_iqn_name scst
+secondary_san_ip Unknown
+secondary_san_login Unknown
+secondary_san_password Unknown
+secondary_sc_api_port Unknown
 send_actions common
 service_down_time common
 sf_account_prefix solidfire
@@ -544,9 +621,11 @@ ssh_conn_timeout san
 ssh_hosts_key_file common
 ssh_max_pool_conn san
 ssh_min_pool_conn san
+ssl_verify Unknown
 start_time common
 state_path common
 storage_availability_zone common
+storage_protocol Unknown
 storage_vnx_authentication_type emc
 storage_vnx_pool_names emc
 storage_vnx_security_file_dir emc
@@ -592,15 +671,22 @@ use_default_quota_class quota
 use_forwarded_for common
 use_multipath_for_image_xfer images
 use_pub_sub zeromq
+use_router_proxy Unknown
 use_stderr disable
 use_syslog disable
+username Unknown
 verbose disable
+violin_dedup_capable_pools Unknown
+violin_dedup_only_pools Unknown
+violin_iscsi_target_ips Unknown
+violin_pool_allocation_method Unknown
 violin_request_timeout violin
 vmware_api_retry_count vmware
 vmware_ca_file vmware
 vmware_cluster_name vmware
 vmware_host_ip vmware
 vmware_host_password vmware
+vmware_host_port Unknown
 vmware_host_username vmware
 vmware_host_version vmware
 vmware_image_transfer_timeout_secs vmware
@@ -631,6 +717,7 @@ volume_transfer_key_length api
 volume_transfer_salt_length api
 volume_usage_audit_period storage
 volumes_dir storage
+vzstorage_default_volume_format Unknown
 vzstorage_mount_options vzstorage
 vzstorage_mount_point_base vzstorage
 vzstorage_shares_config vzstorage
@@ -638,13 +725,20 @@ vzstorage_sparsed_volumes vzstorage
 vzstorage_used_ratio vzstorage
 watch_log_file disable
 windows_iscsi_lun_path windows
-xiv_chap xiv
-xiv_ds8k_connection_type xiv
-xiv_ds8k_proxy xiv
 xtremio_array_busy_retry_count emc_xtremio
 xtremio_array_busy_retry_interval emc_xtremio
 xtremio_cluster_name emc_xtremio
 xtremio_volumes_per_glance_cache emc_xtremio
+zadara_default_snap_policy Unknown
+zadara_password Unknown
+zadara_use_iser Unknown
+zadara_user Unknown
+zadara_vol_encrypt Unknown
+zadara_vol_name_template Unknown
+zadara_vpsa_host Unknown
+zadara_vpsa_poolname Unknown
+zadara_vpsa_port Unknown
+zadara_vpsa_use_ssl Unknown
 zfssa_cache_directory zfssa-nfs
 zfssa_cache_project zfssa-nfs
 zfssa_data_ip zfssa-nfs
@@ -675,8 +769,26 @@ zfssa_target_interfaces zfssa-iscsi
 zfssa_target_password zfssa-iscsi
 zfssa_target_portal zfssa-iscsi
 zfssa_target_user zfssa-iscsi
+zmq_immediate Unknown
 zmq_target_expire zeromq
+zmq_target_update Unknown
 zoning_mode zoning
+zteAheadReadSize Unknown
+zteCachePolicy Unknown
+zteChunkSize Unknown
+zteControllerIP0 Unknown
+zteControllerIP1 Unknown
+zteLocalIP Unknown
+ztePoolVoAllocatedPolicy Unknown
+ztePoolVolAlarmStopAllocatedFlag Unknown
+ztePoolVolAlarmThreshold Unknown
+ztePoolVolInitAllocatedCapacity Unknown
+ztePoolVolIsThin Unknown
+ztePoolVolMovePolicy Unknown
+zteSSDCacheSwitch Unknown
+zteStoragePool Unknown
+zteUserName Unknown
+zteUserPassword Unknown
 BRCD_FABRIC_EXAMPLE/fc_fabric_address zoning_fabric_brcd
 BRCD_FABRIC_EXAMPLE/fc_fabric_password zoning_fabric_brcd
 BRCD_FABRIC_EXAMPLE/fc_fabric_port zoning_fabric_brcd
@@ -732,7 +844,6 @@ database/slave_connection disable
 database/sqlite_db disable
 database/sqlite_synchronous disable
 database/use_db_reconnect disable
-database/use_tpool disable
 fc-zone-manager/brcd_sb_connector zoning_manage_brcd
 fc-zone-manager/cisco_sb_connector zoning_manager_cisco
 fc-zone-manager/fc_fabric_names zoning
@@ -792,12 +903,29 @@ matchmaker_redis/socket_timeout redis
 matchmaker_redis/wait_timeout redis
 oslo_concurrency/disable_process_locking rpc
 oslo_concurrency/lock_path rpc
+oslo_messaging_amqp/addressing_mode Unknown
 oslo_messaging_amqp/allow_insecure_clients rpc
+oslo_messaging_amqp/anycast_address Unknown
 oslo_messaging_amqp/broadcast_prefix rpc
+oslo_messaging_amqp/connection_retry_backoff Unknown
+oslo_messaging_amqp/connection_retry_interval Unknown
+oslo_messaging_amqp/connection_retry_interval_max Unknown
 oslo_messaging_amqp/container_name rpc
+oslo_messaging_amqp/default_notification_exchange Unknown
+oslo_messaging_amqp/default_notify_timeout Unknown
+oslo_messaging_amqp/default_reply_timeout Unknown
+oslo_messaging_amqp/default_rpc_exchange Unknown
+oslo_messaging_amqp/default_send_timeout Unknown
 oslo_messaging_amqp/group_request_prefix rpc
 oslo_messaging_amqp/idle_timeout rpc
+oslo_messaging_amqp/link_retry_delay Unknown
+oslo_messaging_amqp/multicast_address Unknown
+oslo_messaging_amqp/notify_address_prefix Unknown
+oslo_messaging_amqp/notify_server_credit Unknown
 oslo_messaging_amqp/password rpc
+oslo_messaging_amqp/reply_link_credit Unknown
+oslo_messaging_amqp/rpc_address_prefix Unknown
+oslo_messaging_amqp/rpc_server_credit Unknown
 oslo_messaging_amqp/sasl_config_dir rpc
 oslo_messaging_amqp/sasl_config_name rpc
 oslo_messaging_amqp/sasl_mechanisms rpc
@@ -807,6 +935,7 @@ oslo_messaging_amqp/ssl_cert_file rpc
 oslo_messaging_amqp/ssl_key_file rpc
 oslo_messaging_amqp/ssl_key_password rpc
 oslo_messaging_amqp/trace rpc
+oslo_messaging_amqp/unicast_address Unknown
 oslo_messaging_amqp/username rpc
 oslo_messaging_notifications/driver rpc
 oslo_messaging_notifications/topics rpc
@@ -814,6 +943,7 @@ oslo_messaging_notifications/transport_url rpc
 oslo_messaging_rabbit/amqp_auto_delete rabbitmq
 oslo_messaging_rabbit/amqp_durable_queues rabbitmq
 oslo_messaging_rabbit/channel_max rabbitmq
+oslo_messaging_rabbit/connection_factory Unknown
 oslo_messaging_rabbit/default_notification_exchange rabbitmq
 oslo_messaging_rabbit/default_notification_retry_attempts rabbitmq
 oslo_messaging_rabbit/default_rpc_exchange rabbitmq
@@ -866,12 +996,36 @@ oslo_messaging_rabbit/socket_timeout rpc
 oslo_messaging_rabbit/ssl rpc
 oslo_messaging_rabbit/ssl_options rpc
 oslo_messaging_rabbit/tcp_user_timeout rpc
+oslo_messaging_zmq/rpc_cast_timeout Unknown
+oslo_messaging_zmq/rpc_poll_timeout Unknown
+oslo_messaging_zmq/rpc_zmq_bind_address Unknown
+oslo_messaging_zmq/rpc_zmq_bind_port_retries Unknown
+oslo_messaging_zmq/rpc_zmq_contexts Unknown
+oslo_messaging_zmq/rpc_zmq_host Unknown
+oslo_messaging_zmq/rpc_zmq_ipc_dir Unknown
+oslo_messaging_zmq/rpc_zmq_matchmaker Unknown
+oslo_messaging_zmq/rpc_zmq_max_port Unknown
+oslo_messaging_zmq/rpc_zmq_min_port Unknown
+oslo_messaging_zmq/rpc_zmq_serialization Unknown
+oslo_messaging_zmq/rpc_zmq_topic_backlog Unknown
+oslo_messaging_zmq/use_pub_sub Unknown
+oslo_messaging_zmq/use_router_proxy Unknown
+oslo_messaging_zmq/zmq_immediate Unknown
+oslo_messaging_zmq/zmq_target_expire Unknown
+oslo_messaging_zmq/zmq_target_update Unknown
+oslo_middleware/enable_proxy_headers_parsing Unknown
 oslo_middleware/max_request_body_size api
 oslo_middleware/secure_proxy_ssl_header api
 oslo_policy/policy_default_rule disable
 oslo_policy/policy_dirs disable
 oslo_policy/policy_file disable
 oslo_versionedobjects/fatal_exception_format_errors api
+privsep_osbrick/capabilities Unknown
+privsep_osbrick/group Unknown
+privsep_osbrick/helper_command Unknown
+privsep_osbrick/user Unknown
+profiler/connection_string Unknown
 profiler/enabled profiler
 profiler/hmac_keys profiler
 profiler/trace_sqlalchemy profiler
+kaminario_nodedup_substring kaminario

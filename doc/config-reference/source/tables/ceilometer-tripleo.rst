@@ -23,6 +23,6 @@
    * - ``readonly_user_name`` = ``ro_snmp_user``
      - (String) SNMPd user name of all nodes running in the cloud.
    * - ``readonly_user_password`` = ``password``
-     - (String) SNMPd password of all the nodes running in the cloud.
+     - (String) SNMPd v3 authentication password of all the nodes running in the cloud.
    * - ``url_scheme`` = ``snmp://``
      - (String) URL scheme to use for hardware nodes.

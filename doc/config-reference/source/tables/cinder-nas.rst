@@ -18,8 +18,6 @@
      - Description
    * - **[DEFAULT]**
      -
-   * - ``nas_ip`` =
-     - (String) IP address or Hostname of NAS system.
    * - ``nas_login`` = ``admin``
      - (String) User name to connect to NAS system.
    * - ``nas_mount_options`` = ``None``

@@ -838,6 +838,9 @@
 # List of comma-separated target iSCSI IP addresses. (list value)
 #dothill_iscsi_ips =
 
+# Kaminario volume type to be created. (string value)
+#kaminario_nodedup_substring = K2-nodedup
+
 # File with the list of available gluster shares (string value)
 #glusterfs_shares_config = /etc/cinder/glusterfs_shares
 
@@ -3569,3 +3572,7 @@
 # Sets the list of available ciphers. value should be a string in the OpenSSL
 # cipher list format. (string value)
 #ciphers = <None>
+
+
+
+

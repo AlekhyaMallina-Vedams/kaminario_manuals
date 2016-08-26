@@ -8,17 +8,15 @@
     autogenerate-config-doc tool from the openstack-doc-tools repository, or
     ask for help on the documentation mailing list, IRC channel or meeting.
 
-.. _ceilometer-amqp:
+.. _cinder-zoning_manage_brcd:
 
-.. list-table:: Description of AMQP configuration options
+.. list-table:: Description of zoning_manage_brcd configuration options
    :header-rows: 1
    :class: config-ref-table
 
    * - Configuration option = Default value
      - Description
-   * - **[DEFAULT]**
+   * - **[fc-zone-manager]**
      -
-   * - ``control_exchange`` = ``openstack``
-     - (String) The default exchange under which topics are scoped. May be overridden by an exchange name specified in the transport_url option.
-   * - ``transport_url`` = ``None``
-     - (String) A URL representing the messaging driver to use and its full configuration.
+   * - ``brcd_sb_connector`` = ``HTTP``
+     - (String) South bound connector for zoning operation

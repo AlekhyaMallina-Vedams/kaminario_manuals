@@ -19,7 +19,7 @@
    * - **[DEFAULT]**
      -
    * - ``rpc_backend`` = ``rabbit``
-     - (String) The messaging driver to use, defaults to rabbit. Other drivers include amqp and zmq.
+     - (String) DEPRECATED: The messaging driver to use, defaults to rabbit. Other drivers include amqp and zmq. Replaced by [DEFAULT]/transport_url
    * - ``rpc_cast_timeout`` = ``-1``
      - (Integer) Seconds to wait before a cast expires (TTL). The default value of -1 specifies an infinite linger period. The value of 0 specifies no linger period. Pending messages shall be discarded immediately when the socket is closed. Only supported by impl_zmq.
    * - ``rpc_conn_pool_size`` = ``30``
@@ -43,7 +43,7 @@
    * - ``broadcast_prefix`` = ``broadcast``
      - (String) address prefix used when broadcasting to all servers
    * - ``container_name`` = ``None``
-     - (String) Name for the AMQP container
+     - (String) Name for the AMQP container. must be globally unique. Defaults to a generated UUID
    * - ``group_request_prefix`` = ``unicast``
      - (String) address prefix when sending to any server in group
    * - ``idle_timeout`` = ``0``
@@ -77,7 +77,7 @@
    * - ``topics`` = ``notifications``
      - (List) AMQP topic used for OpenStack notifications.
    * - ``transport_url`` = ``None``
-     - (String) A URL representing the messaging driver to use and its full configuration. If not set, we fall back to the rpc_backend option and driver specific configuration.
+     - (String) A URL representing the messaging driver to use and its full configuration.
    * - **[oslo_messaging_rabbit]**
      -
    * - ``rpc_listener_prefetch_count`` = ``100``

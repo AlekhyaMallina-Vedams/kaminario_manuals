@@ -36,6 +36,7 @@ hyperv HyperV volume driver
 ibmnas IBM SONAS and Storwise V7000 volume driver
 images images
 infortrend Infortrend volume driver
+kaminario Kaminario volume driver
 lenovo Lenovo volume driver
 lvm LVM
 nas NAS

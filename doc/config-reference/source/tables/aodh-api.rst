@@ -18,14 +18,10 @@
      - Description
    * - **[api]**
      -
-   * - ``host`` = ``0.0.0.0``
-     - (String) The listen IP for the aodh API server.
    * - ``paste_config`` = ``api_paste.ini``
      - (String) Configuration file for WSGI definition of API.
    * - ``pecan_debug`` = ``False``
      - (Boolean) Toggle Pecan Debug Middleware.
-   * - ``port`` = ``8042``
-     - (Port number) The port for the aodh API server.
    * - ``workers`` = ``1``
      - (Integer) Number of workers for aodh API server.
    * - **[oslo_middleware]**
@@ -33,4 +29,4 @@
    * - ``max_request_body_size`` = ``114688``
      - (Integer) The maximum body size for each request, in bytes.
    * - ``secure_proxy_ssl_header`` = ``X-Forwarded-Proto``
-     - (String) DEPRECATED: The HTTP Header that will be used to determine what the original request protocol scheme was, even if it was hidden by an SSL termination proxy.
+     - (String) DEPRECATED: The HTTP Header that will be used to determine what the original request protocol scheme was, even if it was hidden by a SSL termination proxy.

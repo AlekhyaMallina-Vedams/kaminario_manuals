@@ -10,7 +10,7 @@
 
 .. _cinder-vzstorage:
 
-.. list-table:: Description of VidZapper Storage volume driver configuration options
+.. list-table:: Description of Virtuozzo Storage volume driver configuration options
    :header-rows: 1
    :class: config-ref-table
 

@@ -22,8 +22,6 @@
      - (String) ZeroMQ bind address. Should be a wildcard (*), an ethernet interface, or IP. The "host" option should point or resolve to this address.
    * - ``rpc_zmq_bind_port_retries`` = ``100``
      - (Integer) Number of retries to find free port number before fail with ZMQBindError.
-   * - ``rpc_zmq_concurrency`` = ``eventlet``
-     - (String) Type of concurrency used. Either "native" or "eventlet"
    * - ``rpc_zmq_contexts`` = ``1``
      - (Integer) Number of ZeroMQ contexts, defaults to 1.
    * - ``rpc_zmq_host`` = ``localhost``
@@ -34,11 +32,11 @@
      - (String) MatchMaker driver.
    * - ``rpc_zmq_max_port`` = ``65536``
      - (Integer) Maximal port number for random ports range.
-   * - ``rpc_zmq_min_port`` = ``49152``
+   * - ``rpc_zmq_min_port`` = ``49153``
      - (Port number) Minimal port number for random ports range.
    * - ``rpc_zmq_topic_backlog`` = ``None``
      - (Integer) Maximum number of ingress messages to locally buffer per topic. Default is unlimited.
    * - ``use_pub_sub`` = ``True``
      - (Boolean) Use PUB/SUB pattern for fanout methods. PUB/SUB always uses proxy.
-   * - ``zmq_target_expire`` = ``120``
+   * - ``zmq_target_expire`` = ``300``
      - (Integer) Expiration timeout in seconds of a name service record about existing target ( < 0 means no timeout).
